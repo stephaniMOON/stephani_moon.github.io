@@ -1,0 +1,124 @@
+/*"Este es un comentario en CSS"*/
+
+#contenedor{
+
+border:1px solid blue; /* Colocamos un borde que indica los límites del todo el contenedor*/
+}
+
+#cabecera{
+
+background-color:#34495E ; /*color de fondo de un elemento contenedor div=cabecera*/
+padding: 30px; 
+text-align: center;
+
+}
+
+	 #icon{ /* logo */
+		max-width:4%; /*propiedad, define el ancho máximo que un elemento puede tener*/
+		width:auto; /* propiedad width css establece el ancho de un elemento. Auto - Valor por defecto. El navegador calcula el ancho*/
+		height:auto; /* propiedad height css establece la altura de un elemento*/
+		float:left;		/* Mantiene la imagen flotando a la izquierda*/
+	}
+	
+
+.izquierdo {
+
+float: left; /*propiedad flotante css,especifica como debe flotar un elemento*/
+width:20%;/*ancho seccion menu*/
+text-align:center; /*alineacion del text*/
+padding:20px;/*relleno*/
+background-color:#C39BD3 ;/*color morado con opacidad hsla*/
+
+
+height:1000%;/*altura*/     /*añadimos la altura para que se cubra todo*/
+margin-top:10px; /*margen superior*/
+}
+
+.izquierdo a {
+      background-color:hsla(0.11turn,100%,50%,0.5);  /*Color en link de menú*/
+	  padding:8px; /*Relleno del link que da efecto de botones */
+	  margin-top:2px; /* Margen entre un link  y otro*/
+	  display:block; /*Pantalla valor de bloque*/
+	  width:100%; /* anchura en relleno de los link*/
+	  color:white; /* Color del link*/
+	  font-weight: bold;
+	  text-align:center; 
+	  text-decoration:none; /* sin la linea que caracteriza un enlace*/
+}
+
+
+.izquierdo a:hover{ /*Efecto hover para menus al seleccionar*/
+		background-color:#FADBD8;  /* El efecto hover hace que al seleccionar con el puntero 
+		cualquiera de los link, se torne de otro color al establecido en el relleno*/
+		}
+		
+		
+.derecho{
+	
+	float:right;/*propiedad flotante css, especifica como debe flotar un elemento*/
+	width:20%;/*ancho seccion menu*/
+	text-align:center;/*alineacion del text*/
+	padding:20px;/*relleno*/
+	background-color:#C39BD3 ;/*color morado con opacidad hsla*/
+	
+	height:100%;/*altura*/
+	margin-top:7px;/*margen superior*/
+	
+	
+}
+
+
+*{
+	box-sizing:border-box;/*la box-sizingpropiedad css nos permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+	
+}
+
+.cuerpo {
+	background-image:url("imagenes/fondo de B.webp") ;
+	height:100%; /* altura */
+	 margin-top:7px; /*Margen superior*/
+	 float:left; /* permite al elemento main flotar en una posicion*/
+	 width:60%; /* anchura del elemento */
+	 padding:0 20px; /* relleno */
+	
+}
+
+
+#alinear{
+	display:flex;
+	margin:7px;
+}
+
+#ss {
+	overflow:auto;   /*´propiedad css especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el 
+	contenido excedente en un elemento a nivel de bloque.Depende del agente de usuario. Navegadores de escritorio como Firefox proveen barras de 
+	desplazamiento si hay contenido excedente. */
+ }
+
+.pie{
+	
+	background-color:#DDA0DD;
+	text-align:center;
+	padding:10px;
+}
+
+
+
+	 table, td, th { /*estilo a la tabla creada en index.html*/
+	 border: 7px solid blue; /*bordes con un grosor de 7px,  con un color solido azul*/
+	 width:640;
+	 height:100;
+	 margin-left:auto;
+	 margin-right: auto;
+	 
+	 }
+	
+	
+	
+	@media only screen and (max-width:620px) { /*consulta de medios especificando aplicar condiciones a la pantalla , en este caso 
+	un ancho máximo de 620px para adaptarse y no se distorsionen los elementos que hay en ella*/
+	  .izquierdo, .cuerpo, .derecho {   /* se consideran los divs que hacen la función para maquetar nuestra página, utilizando las clases .menu, .main, .right 
+	  que seran ordenados y adaptados a la pantalla */
+		width:100%;
+	  }
+	}
